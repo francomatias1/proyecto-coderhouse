@@ -1,0 +1,1099 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:active {
+    text-decoration: none;
+
+}
+.fuente {
+    font-family: 'Roboto', sans-serif;
+}
+.margin {
+    margin: 15px;
+}
+
+.width {
+    width: 300px;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.titulo {
+    color: #010101;
+    font-weight: 700;
+    text-align: center;
+    margin: 60px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 200px;
+}
+.link {
+    color: rgb(253, 248, 248);
+}
+
+.fuente-titulo {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 40px;
+
+}
+
+.parrafo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.bg-color {
+    background-image: linear-gradient(to top, #315566 0%, rgb(255, 255, 255) 100%);
+    height: 1000px;
+}
+
+/* Header */
+.df-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    max-width: 100%;
+    height: 100px;
+}
+
+.df-ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.df-ul li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20.5px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: #0c1c95;
+    background-color: #010101;
+}
+
+.navegacion:hover {
+    color: rgb(243, 240, 240);
+    border: 2px solid #3D50E9;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    width: 145px;
+}
+
+/* Fin del header */
+
+/* Main */
+.min-height {
+    min-height: 70vh;
+}
+
+    
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(../img/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(55rem - 80px)
+}
+
+.div-container {
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 2.2rem;
+    width: 700px;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.button {
+    background-color: rgb(0, 0, 0);
+    border-color: #3D50E9;
+    border-width: 3.5px;
+    font-size: 20px;
+    font-weight: normal;
+    width: 250px;
+    height: 60px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif;
+    color: rgb(238, 238, 238);
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.container-img {
+    width: 700px;
+    height: 400px;
+}
+
+.info-div {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 900px;
+}
+
+.styles {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 10px;
+}
+.h2-seminario {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        margin-bottom: 25px;
+    
+}
+.seminarios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.fuente-seminarios {
+    font-size: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.container-iconos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.icono-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.img-iconos {
+    width: 400px;
+    height: 600px;
+}
+
+.img-iconos img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+.animacion-icono {
+    transition: all .3s ease-in-out;
+}
+
+.animacion-icono:hover {
+    transform: scale(1.4);
+    transform-origin: center center;
+}
+
+.fuente--parrafo {
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+.animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.animation::before {
+    content: "Danza Clásica";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000000cc;
+    transform: scale(0);
+    transition: transform .4s;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.animation.content-b::before {
+    content: "Danza Clásica";
+    color: rgb(225, 215, 250);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation.content-a::before {
+    content: "Acrobacia Integral";
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation.content-u::before {
+    content: "Ritmos Urbanos";
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation.content-t::before {
+    content: "Interpretación y Teatro";
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation:hover::before {
+    transform: scale(1);
+}
+
+.sugerencias {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px;
+}
+
+/** Fin de main Index **/
+
+/** Quienes Somos**/
+.img--destacada {
+    width: 100%;
+    height: 700px;
+}
+
+.quienes--somos {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    font-size: 50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+}
+
+.tres--columnas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    margin: 40px;
+}
+
+/** Fin Quienes Somos **/
+
+/** Clases **/
+.grid {
+    border: 3px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth"
+    "first" "second" "third" "fourth" "fifth" "sixth";
+    
+}
+
+.grid-rows {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    height: 100px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.grid-classes {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid rgba(11, 162, 170, 0.678);
+    color: rgba(11, 162, 170, 0.678);
+    font-size: 18px;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.grid-classes2 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid rgba(209, 14, 144, 0.678);
+    color: rgba(214, 39, 191, 0.815);
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.grid-classes3 {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border: 2px solid rgba(209, 118, 14, 0.678);
+    color: rgba(209, 118, 14, 0.678);
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    font-weight: 700;
+}
+
+.grid-hour {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: 13px;
+    border: 2px solid rgb(218, 121, 76);
+    color: rgb(218, 121, 76);
+    width: 55px;
+    height: 25px;
+    font-weight: 700;
+}
+
+.hour-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.advertencia {
+    text-align: center;
+    border: 3px solid red;
+    background-color: rgba(255, 0, 0, 0.288);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 810px;
+    height: 40px;
+}
+
+.advertencia a {
+    color: red;
+}
+
+/** Fin Clases **/
+
+/** Seminarios **/
+.enlace {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: underline;
+    letter-spacing: 0ch;
+    color: #0c1c95;
+}
+
+.contenido-seminario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.seminario-imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.seminario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    transition: all .3s ease-in-out;
+}
+
+.seminario:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+.img-seminario {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 0 30px;
+    margin: 10px 0 0 30px;
+    width: 850px;
+    height: 500px;
+
+}
+
+.img-tamaño {
+    width: 700px;
+    height: 400px;
+}
+
+.costo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #d9157a;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.span {
+    color: #6a489d;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info-costo {
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    padding: 15px;
+}
+
+.info-seminario {
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    line-height: 30px;
+}
+
+.espacio-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.descrip-seminario {
+    font-size: 23px;
+    font-family: 'Manrope', sans-serif;
+    padding: 15px;
+    margin-right: 20px;
+
+}
+
+.titulo-seminario {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.space-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.button-seminario {
+    background-color: rgb(0, 0, 0);
+    border-color: #d9157a;
+    color: white;
+    border-width: 3.5px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.button-seminario:hover {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+/** Preguntas Frecuentes **/
+.main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 40px auto;
+}
+/*
+.categorias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 60px;
+}
+.categoria {
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    font-weight: 700;
+    color: #68646475;
+    border: 2px solid transparent;
+    transition: .3s ease all;
+}
+.categoria:hover {
+    box-shadow: rgba(185, 185, 185, .25);
+    color: #010101;
+}
+.categoria:hover path {
+    fill:#0c1c95;
+}
+.categoria svg {
+    width: 64px;
+    margin-bottom: 10px;
+}
+.categoria.border {
+    border: 2px solid #0c1c95;
+    
+} */
+.contenedor-preguntas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.contenedor-pregunta {
+    background: rgb(234, 233, 241);
+    padding: 40px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+
+}
+.contenedor-pregunta:hover {
+    box-shadow :rgb(36, 36, 36);
+}
+
+.pregunta {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.respuesta {
+    color: #808080;
+    padding: 10px;
+    line-height: 30px;
+}
+
+/*.contenedor-pregunta.border img{
+    transform: rotate(45deg);
+}*/
+/** Contacto, Registrarse, Iniciar Sesión **/
+.contact {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 100%;
+    background-color: rgb(192, 209, 255);
+    border: 2px solid #010101;
+
+}
+
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: column;
+    color: rgb(253, 247, 247);
+    background-color: #030303;
+    width: 440px;
+    height: 420px;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 550px;
+}
+
+.img-form {
+    margin: 25px;
+    padding: 10px;
+    height: 150px;
+
+}
+
+.form-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    font-size: 20px;
+
+}
+
+.div-form input {
+    height: 30px;
+}
+
+.div-form textarea {
+    height: 100px;
+}
+
+
+.movimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 9px;
+
+}
+
+.movimiento input {
+    width: 90%;
+    height: 30px;
+}
+
+.checkbox {
+    display: flex;
+    margin: 10px;
+}
+
+.label-checkbox {
+    font-size: 15px;
+    width: 500px;
+
+}
+
+.div-form label {
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-weight: 500;
+}
+
+.boton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.boton-form {
+    background-color: rgba(39, 200, 228, 0.308);
+    border-color: #030303;
+    border-width: 3.5px;
+    font-size: 20px;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/** Fin de Contacto **/
+
+
+/* Footer */
+.bg-footer {
+    background-color: rgb(0, 0, 0);
+    color: #0c1c95;
+    ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.redes a i {
+    font-size: 25px;
+    text-align: center;
+    margin: 7px;
+    padding: 5px 10px;
+    width: 30px;
+    height: 30px;
+    color: #0c1c95;
+}
+
+.redes a i:hover {
+    transform: scale(1.5);
+    transition: all 1s ease;
+    color: rgb(253, 250, 250);
+}
+
+/* Fin de footer */
+
+/** Media Queries **/
+
+@media (max-width: 1440px) {
+    .df-header {
+        height: 200px;
+    }
+    .img-iconos {
+        width: 400px;
+        height: 500px;
+        margin: 20px;
+        padding: 10px;
+    }
+        
+}
+@media (max-width: 1280px) {
+    .df-ul {
+        justify-content: center;
+    }
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1100px;
+    }
+    .info-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seminarios {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fuente-seminarios {
+        margin: 15px;
+        font-size: 40px;
+    }
+    .iconos {
+        flex-wrap: wrap;
+    }
+    .img-iconos {
+        width: 450px;
+        height: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+    .icono-center svg {
+        width: 80px;
+    }
+    .sugerencias {
+        font-size: 25px;
+    }
+    .bg-footer {
+        font-size: 18px;
+    }
+}
+@media (max-width: 900px) {
+    .df-header {
+        height: 150px;
+    }
+    .df-ul {
+        flex-wrap: wrap;
+    }
+    .logo {
+        width: 300px;
+    }
+    .container-2 {
+        height: 900px
+    }
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-left: 70px;
+    }
+    .iconos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-iconos {
+        width: 600px;
+        height: 500px;
+    }
+    .container-iconos {
+        display: flex;
+        flex-direction: column;
+    }
+    .icono-center svg {
+        width: 350px;
+        height: 120px;
+        
+    }
+    .sugerencias {
+        font-size: 25px;
+        padding: 15px;
+        margin: 20px;
+    }
+    .bg-footer {
+        font-size: 15px;
+    }
+    .logo {
+        width: 200px;
+    }
+    .contenido-seminario {
+        display: flex;
+        flex-direction: column;
+    }
+    .seminario-imagenes {
+        
+
+    }
+}
+@media (max-width: 768px) {
+    .info {
+        font-size: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+    .redes-container, .bg-footer h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+@media (max-width: 480px) {
+    .df-header {
+        height: 450px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .container h1 {
+        font-size: 25px;
+        text-align: center;
+        
+    }
+    .div-container {
+    
+        color: antiquewhite;
+        font-size: 25px;
+        width: 400px;
+        padding: 5px;
+        margin-right: 60px;
+    }
+    
+    .info-div {
+        font-size: 20px;
+        justify-content: center;
+        width: 400px;
+    }
+    .button {
+        width: 250px;
+    }
+    .container-2 {
+        height: 900px;
+        width: 500px;
+    }
+    .container-img {
+        width: 400px;
+    }
+    .seminarios {
+        font-size: 15px;
+    }
+    .fuente-seminarios {
+        margin: 15px;
+        text-align: center;
+        font-size: 30px;
+    }
+   
+    .img-iconos {
+        width: 400px;
+        height: 400px;
+        margin: 20px;
+        padding: 10px;
+    }
+    .icono-center svg {
+        width: 80px;
+    }
+    .sugerencias {
+        font-size: 25px;
+    }
+    .bg-footer {
+        font-size: 18px;
+    }
+    .titulo-seminario{
+        font-size: 20px;
+    }
+    .costo, .span {
+        font-size: 15px;
+    }
+    .parrafo {
+        font-size: 15px;
+    }
+    .seminario {
+        width: 380px;
+        height: 400px;
+        margin: 0;
+        padding: 0;
+    }
+    .h2-seminario {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+}
+
