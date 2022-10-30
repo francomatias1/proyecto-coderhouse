@@ -44,7 +44,6 @@ a:active {
 .link {
     color: rgb(253, 248, 248);
 }
-
 .fuente-titulo {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
@@ -190,8 +189,9 @@ ul li:hover ul {
 .div-img {
     display: flex;
     justify-content: center;
-    margin: 20px;
     align-items: center;
+    margin: 20px;
+    
 }
 
 .container-img {
@@ -280,14 +280,10 @@ ul li:hover ul {
     text-align: center;
     margin: 20px;
 }
-
-
-
 .animation {
     position: relative;
     overflow: hidden;
 }
-
 .animation::before {
     content: "Danza Clásica";
     position: absolute;
@@ -303,7 +299,6 @@ ul li:hover ul {
     text-transform: uppercase;
     font-weight: 700;
 }
-
 .animation.content-b::before {
     content: "Danza Clásica";
     color: rgb(225, 215, 250);
@@ -311,7 +306,6 @@ ul li:hover ul {
     justify-content: center;
     align-items: center;
 }
-
 .animation.content-a::before {
     content: "Acrobacia Integral";
     color: antiquewhite;
@@ -319,7 +313,6 @@ ul li:hover ul {
     justify-content: center;
     align-items: center;
 }
-
 .animation.content-u::before {
     content: "Ritmos Urbanos";
     color: antiquewhite;
@@ -327,7 +320,6 @@ ul li:hover ul {
     justify-content: center;
     align-items: center;
 }
-
 .animation.content-t::before {
     content: "Interpretación y Teatro";
     color: antiquewhite;
@@ -335,18 +327,15 @@ ul li:hover ul {
     justify-content: center;
     align-items: center;
 }
-
 .animation:hover::before {
     transform: scale(1);
 }
-
 .sugerencias {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 700;
     margin: 20px;
 }
-
 /** Fin de main Index **/
 
 /** Quienes Somos**/
@@ -354,13 +343,6 @@ ul li:hover ul {
     width: 100%;
     height: 700px;
 }
-
-.quienes--somos {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .heading {
     font-size: 50px;
     font-family: 'Manrope', sans-serif;
@@ -368,7 +350,6 @@ ul li:hover ul {
     text-align: center;
     margin: 10px;
 }
-
 .tres--columnas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -377,7 +358,6 @@ ul li:hover ul {
     font-family: 'Manrope', sans-serif;
     margin: 40px;
 }
-
 /** Fin Quienes Somos **/
 
 /** Clases **/
@@ -396,7 +376,6 @@ ul li:hover ul {
     "first" "second" "third" "fourth" "fifth" "sixth";
     
 }
-
 .grid-rows {
     display: grid;
     justify-content: center;
@@ -408,7 +387,6 @@ ul li:hover ul {
     font-family: 'Roboto', sans-serif;
 
 }
-
 .grid-classes {
     display: grid;
     justify-content: center;
@@ -420,7 +398,6 @@ ul li:hover ul {
     height: 30px;
     font-weight: 700;
 }
-
 .grid-classes2 {
     display: grid;
     justify-content: center;
@@ -432,7 +409,6 @@ ul li:hover ul {
     height: 30px;
     font-weight: 700;
 }
-
 .grid-classes3 {
     display: grid;
     justify-content: center;
@@ -444,7 +420,6 @@ ul li:hover ul {
     height: 30px;
     font-weight: 700;
 }
-
 .grid-hour {
     display: grid;
     justify-items: center;
@@ -456,13 +431,11 @@ ul li:hover ul {
     height: 25px;
     font-weight: 700;
 }
-
 .hour-center {
     display: flex;
     justify-content: center;
     align-content: center;
 }
-
 .advertencia {
     text-align: center;
     border: 3px solid red;
@@ -474,12 +447,127 @@ ul li:hover ul {
     width: 810px;
     height: 40px;
 }
-
 .advertencia a {
     color: red;
 }
-
 /** Fin Clases **/
+
+/** Carrera **/
+.banner-carrera {
+    background-image: url(../img/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-carrera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 65px;
+}
+.space {
+    text-align: center;
+    margin: 30px;
+    width: 900px;  
+   
+}
+.space-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+}
+.img-carrera {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+}
+.info-carrera h2 {
+    font-size: 3.5rem;
+    padding: 10px;
+}
+.info-carrera {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 5px;
+    font-size: 22px;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1px;
+    color: rgb(238, 238, 238);
+}
+.button-carrera {
+    background-color: rgb(0, 0, 0);
+    border-color: #3D50E9;
+    border-width: 5px;
+    font-size: 25px;
+    font-weight: normal;
+    width: 350px;
+    height: 70px;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+}
+.container-carrera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.inscripcion {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+}
+.titulo-form {
+    text-align: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+.text-form {
+    width: 650px;
+    height: 50px;
+}
+.dos-columnas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 150px;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    margin: 20px;
+}
+.boton-carrera {
+    color: rgb(255, 255, 255);
+    background-color: #010101;
+    border: 4px solid #0c1c95;
+    font-size: 25px;
+    width: 250px;
+    height: 60px;
+    font-weight: 700;
+    
+}
 
 /** Seminarios **/
 .enlace {
@@ -502,9 +590,7 @@ ul li:hover ul {
     justify-content: space-between;
     align-items: center;
     margin: 5px;
-
 }
-
 .seminario {
     display: flex;
     flex-direction: column;
@@ -514,12 +600,10 @@ ul li:hover ul {
     height: 500px;
     transition: all .3s ease-in-out;
 }
-
 .seminario:hover {
     transform: scale(1.1);
     transform-origin: center center;
 }
-
 .img-seminario {
     display: flex;
     justify-content: space-between;
@@ -527,9 +611,7 @@ ul li:hover ul {
     margin: 10px 0 0 30px;
     width: 850px;
     height: 500px;
-
 }
-
 .img-tamaño {
     width: 700px;
     height: 400px;
@@ -684,9 +766,6 @@ ul li:hover ul {
     line-height: 30px;
 }
 
-/*.contenedor-pregunta.border img{
-    transform: rotate(45deg);
-}*/
 /** Contacto, Registrarse, Iniciar Sesión **/
 .contact {
     margin-top: 20px;
@@ -898,6 +977,9 @@ ul li:hover ul {
     .df-ul {
         justify-content: center;
     }
+    .navegacion {
+        font-size: 18px;
+    }
     .container {
         justify-content: center;
         align-items: center;
@@ -912,6 +994,17 @@ ul li:hover ul {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .img-carrera {
+        margin: 5px;
+        width: 700px;
+        height: 400px;
+    }
+    .dos-columnas {
+        column-gap: 50px;
+    }
+    .text-form {
+        width: 400px;
     }
     .seminarios {
         flex-direction: column;
@@ -954,6 +1047,43 @@ ul li:hover ul {
     .container-2 {
         height: 900px
     }
+    .titulo-carrera {
+        font-size: 40px;
+    }
+    .button-carrera {
+        font-size: 20px;
+        width: 170px;
+        height: 35px;
+        font-weight: 700;
+    }
+    .titulo-form {
+        font-size: 30px;
+    }
+    .button-carrera {
+        width: 250px;
+        height: 70px;
+    }
+    .dos-columnas {
+        font-size: 18px;
+    }
+    .info-carrera h2 {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+    .info-carrera {
+        font-size: 15px;
+    }
+    .img-carrera {
+        width: 550px;
+        height: 400px;
+        padding: 15px;
+    }
+    .boton-carrera {
+        font-size: 20px;
+        width: 170px;
+        height: 35px;
+        font-weight: 700;
+        }
     .info {
         display: flex;
         justify-content: center;
@@ -995,10 +1125,6 @@ ul li:hover ul {
         display: flex;
         flex-direction: column;
     }
-    .seminario-imagenes {
-        
-
-    }
 }
 @media (max-width: 768px) {
     .info {
@@ -1009,6 +1135,25 @@ ul li:hover ul {
     .redes-container, .bg-footer h3 {
         font-size: 15px;
         text-align: center;
+    }
+    .titulo-carrera {
+        font-size: 35px;
+        width: 880px;
+    }
+    .button-carrera {
+    font-size: 20px;
+    width: 210px;
+    height: 70px;
+    }
+    .img-carrera {
+        width: 500px;
+        height: 350px;
+    }
+    .titulo-form {
+        font-size: 25px;
+    }
+    .text-form {
+        width: 250px;
     }
 }
 @media (max-width: 480px) {
@@ -1035,7 +1180,6 @@ ul li:hover ul {
         padding: 5px;
         margin-right: 60px;
     }
-    
     .info-div {
         font-size: 20px;
         justify-content: center;
@@ -1059,7 +1203,6 @@ ul li:hover ul {
         text-align: center;
         font-size: 30px;
     }
-   
     .img-iconos {
         width: 400px;
         height: 400px;
@@ -1073,7 +1216,42 @@ ul li:hover ul {
         font-size: 25px;
     }
     .bg-footer {
-        font-size: 18px;
+        font-size: 13px;
+    }
+    .space {
+        width: 500px;
+    }
+    .titulo-carrera {
+        font-size: 35px;
+    }
+    .button-carrera {
+    font-size: 18px;
+    width: 190px;
+    height: 50px;
+    }
+    .info {
+    width: 520px;
+    height: 500px;
+    }
+    .info-carrera {
+        font-size: 13px;
+        width: 490px;
+    }
+    .img-carrera {
+        width: 400px;
+        height: 300px;
+    }
+    .titulo-form {
+        font-size: 25px;
+    }
+    .text-form {
+        width: 250px;
+        height: 30px;
+    }
+    .inscripcion, .row {
+        display: flex;
+        flex-direction: column;
+        margin: 0%;
     }
     .titulo-seminario{
         font-size: 20px;
