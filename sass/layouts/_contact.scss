@@ -1,0 +1,132 @@
+.contact {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: $fuentePrimaria;
+    font-weight: 700;
+}
+.section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .formulario {
+        display: flex;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-direction: column;
+        color: $blanco;
+        background-color: $negro;
+        width: 440px;
+        height: 420px;
+        margin: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        height: 550px;
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            font-family: $fuentePrimaria;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.main-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 100%;
+    background-color: rgb(53, 53, 53);
+    border: 2px solid $negro;
+}
+.img-form {
+    margin: 25px;
+    padding: 10px;
+    height: 150px;
+}
+.form-items {
+    @extend .redes-container;
+
+    & input {
+        width: 300px;
+    }
+}
+
+.div-form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 550px;
+    font-size: 20px;
+
+    & input {
+        height: 30px;
+    }
+    & textarea {
+        height: 100px;
+    }
+    & label {
+        font-family: $fuentePrimaria;
+        text-align: left;
+        font-weight: 500;
+    }
+}
+.movimiento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 9px;
+
+    & input {
+        width: 90%;
+        height: 30px;
+    }
+}
+.checkbox {
+    display: flex;
+    margin: 10px;   
+}
+.move {
+    margin-top: 2px;
+}
+.label-checkbox {
+    font-size: 15px;
+    width: 500px;
+    padding: 10px;
+}
+.boton {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.boton-form {
+    background-color: rgba(39, 200, 228, 0.308);
+    border-color: $negro;
+    border-width: 3.5px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/** Fin de Contacto **/

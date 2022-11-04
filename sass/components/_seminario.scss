@@ -1,0 +1,131 @@
+/** Seminarios **/
+
+.titulo-seminario {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 25px;
+    margin-left: 14px;
+    font-family: $fuentePrimaria;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.espacio-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+@mixin text($m, $p) {
+    margin: $m;
+    padding: $p;
+}
+.parrafo {
+    @include text(10px, 20px);
+    font-family: $fuentePrimaria;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    
+}
+.img-tamaño {
+    width: 700px;
+    height: 400px;
+}
+.info-seminario {
+    font-size: 15px;
+    font-family: $fuenteSecundaria;
+    line-height: 30px;
+}
+.costo {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #d9157a;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    font-family: $fuenteSecundaria;
+
+}
+.span {
+    color: #6a489d;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.contenido-seminario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .seminario-imagenes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+
+        .h2-seminario {
+            font-family: $fuentePrimaria;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+    }
+
+        .seminario {
+            @extend .redes-container;
+            width: 700px;
+            height: 500px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                transform-origin: center center;
+            }
+        }
+    }
+    .img-seminario {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0 0 30px;
+        margin: 10px 0 0 30px;
+        width: 850px;
+        height: 500px;
+    }
+    .info-costo {
+        font-size: 20px;
+        font-family: $fuenteSecundaria;
+        padding: 15px;
+    }
+    .descrip-seminario {
+        font-size: 20px;
+        font-family: $fuenteSecundaria;
+        padding: 15px;
+        margin-right: 20px;
+    }
+    .space-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    .button-seminario {
+        background-color: $negro;
+        border-color: #d9157a;
+        color: $blanco;
+        border-width: 3.5px;
+        font-size: 20px;
+        font-weight: bold;
+        width: 250px;
+        height: 60px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+            transform-origin: center center;
+        }
+    }
+    
+}
+
+/** Fin de Seminario **/

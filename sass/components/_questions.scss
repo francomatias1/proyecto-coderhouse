@@ -1,0 +1,52 @@
+/** Preguntas Frecuentes **/
+
+.main {
+    max-width: 1000px;
+    width: 90%;
+    margin: 40px auto;
+
+    .contenedor-preguntas {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+        .contenedor-pregunta {
+            background: rgb(234, 233, 241);
+            padding: 40px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+        
+            &:hover {
+                box-shadow :rgb(36, 36, 36);
+            }
+            .pregunta {
+                font-family: $fuentePrimaria;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                text-transform: uppercase;
+                margin-left: 7px;
+            }
+            .respuesta {
+                font-family: $fuentePrimaria;
+                color: #808080;
+                padding: 10px;
+                line-height: 30px;
+            
+            }
+        }
+    }
+}
+
+/* Fin de Preguntas Frecuentes */
+
+
+
+
+
+
+
+

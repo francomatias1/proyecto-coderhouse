@@ -1,0 +1,41 @@
+.bg-footer {
+    background-color: $negro;
+    color: $primario;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: $fuentePrimaria;
+
+    .redes-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            & a i {
+                font-size: 25px;
+                text-align: center;
+                margin: 7px;
+                padding: 5px 10px;
+                width: 30px;
+                height: 30px;
+                color: var(--primario);
+            }
+            & a i:hover {
+                transform: scale(1.5);
+                transition: all 1s ease;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+

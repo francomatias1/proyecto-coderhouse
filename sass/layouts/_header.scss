@@ -1,0 +1,54 @@
+.df-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $negro;
+    max-width: 100%;
+    height: 100px;
+
+    .df-ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        li {
+            font-family: $fuentePrimaria;
+            font-weight: bold;
+            font-size: 20.5px;
+        }
+    }
+
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: $primario;
+        background-color: $negro;
+
+        &:hover {
+            color: $blanco;
+            border: 2px solid $primarioClaro;
+        }
+    }
+    li {
+        display: inline-block;
+        position: relative;
+    }
+    ul ul {
+        position: absolute;
+        display: none;
+    }
+    ul ul li {
+        display: block;
+    }
+    ul li:hover ul {
+        display: block;
+        width: 145px;
+    }
+}
+
+
+
+

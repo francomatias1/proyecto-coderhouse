@@ -1,0 +1,81 @@
+.grid {
+    border: 3px solid $negro;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    
+    .grid-rows {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $blanco;
+        height: 100px;
+        color: $blanco;
+        background-color: $negro;
+        font-family: $fuentePrimaria;
+    }
+    .grid-hour {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 13px;
+        border: 2px solid $lightOrange;
+        color: $lightOrange;
+        width: 55px;
+        height: 25px;
+        font-weight: 700;
+    }
+    .grid-classes {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid $lightBlue;
+        color: $lightBlue;
+        font-size: 18px;
+        width: 200px;
+        height: 30px;
+        font-weight: 700;
+    }
+    .grid-classes2 {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid $pink;
+        color: rgba(214, 39, 191, 0.815);
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+        font-weight: 700;
+    }
+    .grid-classes3 {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid $orange;
+        color: $orange;
+        font-size: 20px;
+        width: 200px;
+        height: 30px;
+        font-weight: 700;
+    }
+}
+.hour-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.advertencia {
+    text-align: center;
+    border: 3px solid $red;
+    background-color: rgba(255, 0, 0, 0.288);
+    font-size: 25px;
+    font-family: $fuentePrimaria;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 810px;
+    height: 40px;
+
+    & a {
+        color: $red;
+    }
+}
+

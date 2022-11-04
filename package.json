@@ -1,0 +1,22 @@
+{
+  "name": "believe-aguirre",
+  "version": "1.0.0",
+  "description": "Migrando proyecto a SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francomatias1/proyecto-coderhouse.git"
+  },
+  "author": "Franco Aguirre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/francomatias1/proyecto-coderhouse/issues"
+  },
+  "homepage": "https://github.com/francomatias1/proyecto-coderhouse#readme",
+  "keywords": [
+    "developer"
+  ]
+}
