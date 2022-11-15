@@ -3,20 +3,24 @@ html {
     scroll-behavior: smooth;
 }
 .bg-career {
-    @extend .container-2;
-    height: 1100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: $negro;
+    height: 700px;
 }
 
 .banner-carrera {
-    background-image: url(../img/img2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/img2-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: calc(55rem - 80px);
+    
 
     .button-carrera {
         background-color: $negro;
@@ -34,10 +38,9 @@ html {
             transform-origin: center center;
         }
     }
-
     .space {
         text-align: center;
-        margin: 30px;
+        margin: 15px;
         width: 900px;  
 
         .titulo-carrera {
@@ -48,19 +51,19 @@ html {
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 65px;
+            padding: 10px;
         }
-        
     }
 }
 .space-boton {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 20px;
 }
 .img-carrera {
-    @extend .space-boton;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 800px;
     height: 500px;
 }
@@ -68,19 +71,11 @@ html {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 5px;
+    padding: 5px;
     font-size: 22px;
     font-family: $fuenteSecundaria;
     letter-spacing: 1px;
     color: $blanco;
-
-    & span {
-        margin: 2px;
-        padding-left: 10px;
-        line-height: 35px;
-        color: $primarioClaro;
-        border: 3px solid $blanco;
-    }
 
     & h2 {
         font-size: 3.5rem;
@@ -98,16 +93,14 @@ html {
 
         .inscripcion {
             display: flex;
-            gap: 15px;
             flex-direction: column;
-            margin: 30px;
-            padding: 20px;
 
             .titulo-form {
                 text-align: center;
                 font-weight: 700;
                 font-size: 35px;
                 font-family: $fuentePrimaria;
+                padding: 25px;
             }
             .row {
                 display: flex;
@@ -117,18 +110,17 @@ html {
                 width: 650px;
                 height: 50px;
             }
-            
         }
     }
 }
 .dos-columnas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 150px;
+    gap: 30px;
     font-size: 25px;
     font-weight: 700;
     font-family: $fuenteSecundaria;
-    margin: 20px;
+    padding: 10px;
 }
 .boton-carrera {
     color: $blanco;
@@ -138,7 +130,7 @@ html {
     width: 250px;
     height: 60px;
     font-weight: 700;
+    margin: 15px;
     
 }
-
 /** Fin de Carrera **/

@@ -2,7 +2,6 @@
 /* abstracts */
 /* Colores */
 /* Fuentes */
-/* Breakpoints */
 /* base */
 * {
   margin: 0;
@@ -26,12 +25,13 @@ a:active {
 }
 
 .titulo {
+  padding: 40px;
   color: rgb(0, 0, 0);
   font-weight: 700;
   text-align: center;
-  margin: 60px 0;
   font-family: "Roboto", sans-serif;
   font-size: 40px;
+  height: 120px;
 }
 
 .logo {
@@ -114,7 +114,7 @@ a:active {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  background-image: url(../img/header.jpg);
+  background-image: url(../img/header-min.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -131,14 +131,14 @@ a:active {
   text-align: center;
 }
 
-.container-2, .bg-career {
+.container-2 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   height: 700px;
   background-color: rgb(0, 0, 0);
 }
-.container-2 .info, .bg-career .info {
+.container-2 .info {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -147,7 +147,7 @@ a:active {
   font-family: "Manrope", sans-serif;
   color: rgb(253, 248, 248);
 }
-.container-2 .info .info-div, .bg-career .info .info-div {
+.container-2 .info .info-div {
   margin-top: 15px;
   margin-bottom: 15px;
   width: 900px;
@@ -295,17 +295,37 @@ a:active {
   transform-origin: center center;
 }
 
-.grid {
-  border: 3px solid rgb(0, 0, 0);
+.titulo-principal {
+  font-size: 50px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.titulo {
+  text-transform: uppercase;
+}
+
+.bg-classes {
+  background-image: url(../img/img8-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
 }
 .grid .grid-rows {
   display: grid;
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(253, 248, 248);
-  height: 100px;
+  height: 110px;
+  width: 800px;
   color: rgb(253, 248, 248);
   background-color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
@@ -374,6 +394,10 @@ a:active {
 }
 .advertencia a {
   color: rgb(255, 0, 0);
+}
+
+.min-height {
+  min-height: 77vh;
 }
 
 .contact {
@@ -586,19 +610,23 @@ html {
 }
 
 .bg-career {
-  height: 1100px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgb(0, 0, 0);
+  height: 700px;
 }
 
 .banner-carrera {
-  background-image: url(../img/img2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/img2-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: calc(55rem - 80px);
 }
 .banner-carrera .button-carrera {
   background-color: rgb(0, 0, 0);
@@ -617,7 +645,7 @@ html {
 }
 .banner-carrera .space {
   text-align: center;
-  margin: 30px;
+  margin: 15px;
   width: 900px;
 }
 .banner-carrera .space .titulo-carrera {
@@ -628,17 +656,19 @@ html {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 65px;
+  padding: 10px;
 }
 
-.space-boton, .img-carrera {
+.space-boton {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin: 20px;
 }
 
 .img-carrera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 800px;
   height: 500px;
 }
@@ -647,18 +677,11 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 5px;
+  padding: 5px;
   font-size: 22px;
   font-family: "Manrope", sans-serif;
   letter-spacing: 1px;
   color: rgb(253, 248, 248);
-}
-.info-carrera span {
-  margin: 2px;
-  padding-left: 10px;
-  line-height: 35px;
-  color: #3D50E9;
-  border: 3px solid rgb(253, 248, 248);
 }
 .info-carrera h2 {
   font-size: 3.5rem;
@@ -676,16 +699,14 @@ html {
 }
 .container-carrera .column .inscripcion {
   display: flex;
-  gap: 15px;
   flex-direction: column;
-  margin: 30px;
-  padding: 20px;
 }
 .container-carrera .column .inscripcion .titulo-form {
   text-align: center;
   font-weight: 700;
   font-size: 35px;
   font-family: "Roboto", sans-serif;
+  padding: 25px;
 }
 .container-carrera .column .inscripcion .row {
   display: flex;
@@ -699,11 +720,11 @@ html {
 .dos-columnas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 150px;
+  gap: 30px;
   font-size: 25px;
   font-weight: 700;
   font-family: "Manrope", sans-serif;
-  margin: 20px;
+  padding: 10px;
 }
 
 .boton-carrera {
@@ -714,6 +735,7 @@ html {
   width: 250px;
   height: 60px;
   font-weight: 700;
+  margin: 15px;
 }
 
 /** Fin de Carrera **/
@@ -787,7 +809,8 @@ html {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 2px;
-  margin-bottom: 25px;
+  margin: 20px;
+  padding: 15px;
 }
 .contenido-seminario .seminario-imagenes .seminario {
   width: 700px;
@@ -883,7 +906,7 @@ html {
 /** Media Queries **/
 @media (max-width: 1440px) {
   .df-header {
-    height: 200px;
+    height: 150px;
   }
   .df-ul {
     justify-content: center;
@@ -891,23 +914,18 @@ html {
   .navegacion {
     font-size: 18px;
   }
-  .space {
-    width: 700px;
-  }
-  .container, .banner-carrera {
+  .container, .banner-carrera, .info-div, .container-carrera {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    padding: auto;
   }
   .container-2, .bg-career {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1100px;
-  }
-  .info-div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 1000px;
   }
   .img-carrera {
     margin: 5px;
@@ -939,28 +957,24 @@ html {
   .bg-footer {
     font-size: 18px;
   }
-  .bg-career {
-    height: 1400px;
-  }
-  .inscripcion {
-    width: 1400px;
-  }
-  .inscripcion label {
-    font-size: 20px;
-  }
   .bg-color {
     background-repeat: no-repeat;
     background-size: cover;
   }
 }
 @media (max-width: 1280px) {
+  .df-header {
+    height: 200px;
+  }
   .df-ul {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   .navegacion {
     font-size: 18px;
   }
-  .container {
+  .container, .banner-carrera {
     justify-content: center;
     align-items: center;
   }
@@ -968,7 +982,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1400px;
+    height: 1200px;
   }
   .info-div {
     display: flex;
@@ -1016,24 +1030,60 @@ html {
 }
 @media (max-width: 900px) {
   .df-header {
+    width: 650px;
     height: 150px;
   }
   .df-ul {
     flex-wrap: wrap;
   }
-  .logo {
-    width: 300px;
+  .fuente-titulo {
+    width: 610px;
+    font-size: 30px;
   }
-  .container-2, .bg-career {
-    height: 1200px;
+  .container {
+    width: 620px;
   }
-  .info-div {
-    display: flex;
-    flex-direction: column;
-    width: 700px;
+  .container .div-container {
     font-size: 20px;
-    margin: 5px;
-    padding: 15px;
+  }
+  .container p, .container .info-div {
+    width: 600px;
+  }
+  .container-2 {
+    width: 700px;
+    height: 900px;
+  }
+  .container-2 h2 {
+    font-size: 35px;
+    width: 650px;
+  }
+  .container-2 p {
+    width: 550px;
+    margin-right: 70px;
+    font-size: 18px;
+  }
+  .container-2 .place {
+    margin-right: 50px;
+  }
+  .container-2 .div-img {
+    width: 550px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .container-2 .div-img .container-img {
+    margin-right: 80px;
+  }
+  .iconos {
+    width: 550px;
+  }
+  .container-iconos {
+    width: 600px;
+  }
+  .bg-footer {
+    width: 600px;
+  }
+  .bg-footer p, .bg-footer h3 {
+    text-align: center;
   }
   .titulo-carrera {
     font-size: 40px;
@@ -1118,6 +1168,9 @@ html {
   }
 }
 @media (max-width: 768px) {
+  .container {
+    width: 650px;
+  }
   .info {
     font-size: 15px;
     padding: 15px;
@@ -1131,11 +1184,11 @@ html {
     font-size: 15px;
     text-align: center;
   }
-  .container-2, .bg-career {
+  .container-2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1300px;
+    height: 1000px;
   }
   .info-div {
     display: flex;
@@ -1203,7 +1256,7 @@ html {
   .button {
     width: 250px;
   }
-  .container-2, .bg-career {
+  .container-2 {
     height: 1300px;
     width: 500px;
   }

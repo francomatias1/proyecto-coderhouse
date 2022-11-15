@@ -1,7 +1,7 @@
 /** Media Queries **/
-@media (max-width: $mediaDesktop-1440) {
+@media (max-width: 1440px) {
     .df-header {
-        height: 200px;
+        height: 150px;
     }
     .df-ul {
         justify-content: center;
@@ -9,30 +9,24 @@
     .navegacion {
         font-size: 18px;
     }
-    .space {
-        width: 700px;
-    }
-    .container, .banner-carrera {
-        justify-content: center;
-        align-items: center;
-    }
-    .container-2 {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 1100px;
-    }
-    .info-div {
+    .container, .banner-carrera, .info-div, .container-carrera {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: auto;
+        padding: auto;
+    }
+    .container-2, .bg-career {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 1000px;
     }
     .img-carrera {
         margin: 5px;
         width: 700px;
         height: 400px;
     }
-
     .img-iconos {
         width: 400px;
         height: 500px;
@@ -58,15 +52,6 @@
     .bg-footer {
         font-size: 18px;
     }
-    .bg-career {
-        height: 1400px;
-    }
-    .inscripcion {
-        width: 1400px;
-    }
-    .inscripcion label {
-        font-size: 20px;
-    }
     .bg-color {
         background-repeat: no-repeat;
         background-size: cover;
@@ -74,28 +59,35 @@
     }
     
 }
-@media (max-width: $mediaLaptop-1280) {
+@media (max-width: 1280px) {
+    .df-header {
+        height: 200px;
+    }
     .df-ul {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
     .navegacion {
         font-size: 18px;
     }
-    .container {
+    .container, .banner-carrera {
         justify-content: center;
         align-items: center;
     }
-    .container-2 {
+    .container-2, .bg-career {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 1400px;
+        height: 1200px;
     }
     .info-div {
         display: flex;
         justify-content: center;
         align-items: center;
+    
     }
+   
     .img-carrera {
         margin: 5px;
         width: 700px;
@@ -134,27 +126,69 @@
     .bg-footer {
         font-size: 18px;
     }
+    
 }
-@media (max-width: $mediaLaptop-900) {
+@media (max-width: 900px) {
     .df-header {
+        width: 650px;
         height: 150px;
     }
-    .df-ul {
+    .df-ul{
         flex-wrap: wrap;
     }
-    .logo {
-        width: 300px;
+    .fuente-titulo {
+        width: 610px;
+        font-size: 30px;
+    }
+    .container {
+        width: 620px;
+
+        .div-container {
+            font-size: 20px;
+        }
+        p, .info-div {
+            width: 600px;
+        }
     }
     .container-2 {
-        height: 1200px;
-    }
-    .info-div {
-        display: flex;
-        flex-direction: column;
         width: 700px;
-        font-size: 20px;
-        margin: 5px;
-        padding: 15px;
+        height: 900px;
+        
+        h2 {
+            font-size: 35px;
+            width: 650px;
+        }
+        p {
+            width: 550px;
+            margin-right: 70px;
+            font-size: 18px;
+        }
+        .place {
+            margin-right: 50px;
+        }
+        .div-img {
+            width: 550px;
+            display: flex;
+            justify-content: flex-start;
+            
+            .container-img {
+               
+                margin-right: 80px;
+            }
+        }
+    }
+    .iconos {
+        width: 550px;   
+    }
+    .container-iconos {
+        width: 600px;
+    }
+    .bg-footer {
+        width: 600px;
+
+        p, h3 {
+            text-align: center;
+        }
     }
     .titulo-carrera {
         font-size: 40px;
@@ -239,7 +273,11 @@
         flex-direction: column;
     }
 }
-@media (max-width: $mediaTablet-768) {
+@media (max-width: 768px) {
+    
+    .container {
+        width: 650px;
+    }
     .info {
         font-size: 15px;
         padding: 15px;
@@ -258,7 +296,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 1300px;
+        height: 1000px;
     }
     .info-div {
         display: flex;
@@ -292,13 +330,12 @@
         justify-content: space-around
         
     }
-    
     .tres--columnas {
         display: flex;
         flex-direction: column;
     }
 }
-@media (max-width: $mediaMobile-480) {
+@media (max-width: 480px) {
     .df-header {
         height: 450px;
         flex-direction: column;

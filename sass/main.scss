@@ -1,9 +1,11 @@
 /* abstracts */
 @import "./abstracts/variables";
 
+
 /* base */
 @import "./base/resets";
 @import "./base/base";
+
 
 /* layouts */
 @import "./layouts/header";
@@ -12,11 +14,14 @@
 @import "./layouts/contact";
 @import "./layouts/footer";
 
+
+
 /* components */
 @import "./components/direction";
 @import "./components/career";
 @import "./components/seminario";
 @import "./components/questions";
-@import "./layouts/medias";
+@import "./components/medias";
+
 
 
