@@ -170,14 +170,16 @@ a:active {
   flex-direction: column;
   margin: 10px;
 }
-.styles .seminarios {
+
+.seminarios {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin: 10px;
 }
-.styles .seminarios .fuente-seminarios {
-  font-size: 3.5rem;
+
+.fuente-seminarios {
+  font-size: 60px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -315,11 +317,11 @@ a:active {
   background-size: cover;
 }
 
-.grid {
-  display: grid;
-  justify-content: center;
+.grid-flex {
+  display: flex;
+  justify-content: flex-start;
 }
-.grid .grid-rows {
+.grid-flex .grid-rows {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -330,7 +332,7 @@ a:active {
   background-color: rgb(0, 0, 0);
   font-family: "Roboto", sans-serif;
 }
-.grid .grid-hour {
+.grid-flex .grid-hour {
   display: grid;
   justify-items: center;
   align-items: center;
@@ -341,7 +343,7 @@ a:active {
   height: 25px;
   font-weight: 700;
 }
-.grid .grid-classes {
+.grid-flex .grid-classes {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -352,7 +354,7 @@ a:active {
   height: 30px;
   font-weight: 700;
 }
-.grid .grid-classes2 {
+.grid-flex .grid-classes2 {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -363,7 +365,7 @@ a:active {
   height: 30px;
   font-weight: 700;
 }
-.grid .grid-classes3 {
+.grid-flex .grid-classes3 {
   display: grid;
   justify-content: center;
   align-content: center;
@@ -543,19 +545,19 @@ a:active {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
-.bg-footer .redes-container, .bg-footer .contenido-seminario .seminario-imagenes .seminario, .contenido-seminario .seminario-imagenes .bg-footer .seminario, .bg-footer .form-items {
+.bg-footer .redes-container, .bg-footer .contenido-seminario .seminario-imagenes .seminario, .contenido-seminario .seminario-imagenes .bg-footer .seminario, .bg-footer .contenido-seminario2 .seminario-imagenes .seminario, .contenido-seminario2 .seminario-imagenes .bg-footer .seminario, .bg-footer .form-items {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.bg-footer .redes-container .redes, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes, .bg-footer .form-items .redes {
+.bg-footer .redes-container .redes, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes, .bg-footer .contenido-seminario2 .seminario-imagenes .seminario .redes, .contenido-seminario2 .seminario-imagenes .bg-footer .seminario .redes, .bg-footer .form-items .redes {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.bg-footer .redes-container .redes a i, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes a i, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes a i, .bg-footer .form-items .redes a i {
+.bg-footer .redes-container .redes a i, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes a i, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes a i, .bg-footer .contenido-seminario2 .seminario-imagenes .seminario .redes a i, .contenido-seminario2 .seminario-imagenes .bg-footer .seminario .redes a i, .bg-footer .form-items .redes a i {
   font-size: 25px;
   text-align: center;
   margin: 7px;
@@ -564,7 +566,7 @@ a:active {
   height: 30px;
   color: var(--primario);
 }
-.bg-footer .redes-container .redes a i:hover, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes a i:hover, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes a i:hover, .bg-footer .form-items .redes a i:hover {
+.bg-footer .redes-container .redes a i:hover, .bg-footer .contenido-seminario .seminario-imagenes .seminario .redes a i:hover, .contenido-seminario .seminario-imagenes .bg-footer .seminario .redes a i:hover, .bg-footer .contenido-seminario2 .seminario-imagenes .seminario .redes a i:hover, .contenido-seminario2 .seminario-imagenes .bg-footer .seminario .redes a i:hover, .bg-footer .form-items .redes a i:hover {
   transform: scale(1.5);
   transition: all 1s ease;
   color: rgb(253, 248, 248);
@@ -677,6 +679,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-left: 10px;
   padding: 5px;
   font-size: 22px;
   font-family: "Manrope", sans-serif;
@@ -708,12 +711,14 @@ html {
   font-family: "Roboto", sans-serif;
   padding: 25px;
 }
-.container-carrera .column .inscripcion .row {
+
+.row {
   display: flex;
   flex-direction: row;
 }
-.container-carrera .column .inscripcion .text-form {
-  width: 650px;
+
+.text-form {
+  width: 550px;
   height: 50px;
 }
 
@@ -740,6 +745,10 @@ html {
 
 /** Fin de Carrera **/
 /** Seminarios **/
+.background {
+  background-image: linear-gradient(to top, #313f66 0%, rgb(255, 255, 255) 100%);
+}
+
 .titulo-seminario {
   text-transform: uppercase;
   text-align: left;
@@ -793,35 +802,37 @@ html {
   margin-bottom: 5px;
 }
 
-.contenido-seminario {
+.contenido-seminario, .contenido-seminario2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.contenido-seminario .seminario-imagenes {
+.contenido-seminario .seminario-imagenes, .contenido-seminario2 .seminario-imagenes {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin: 5px;
 }
-.contenido-seminario .seminario-imagenes .h2-seminario {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
+.contenido-seminario .seminario-imagenes .h2-seminario, .contenido-seminario2 .seminario-imagenes .h2-seminario {
+  font-family: "Manrope", sans-serif;
+  font-size: 27px;
   font-weight: 700;
   letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: overline;
   margin: 20px;
   padding: 15px;
 }
-.contenido-seminario .seminario-imagenes .seminario {
+.contenido-seminario .seminario-imagenes .seminario, .contenido-seminario2 .seminario-imagenes .seminario {
   width: 700px;
   height: 500px;
   transition: all 0.3s ease-in-out;
 }
-.contenido-seminario .seminario-imagenes .seminario:hover {
+.contenido-seminario .seminario-imagenes .seminario:hover, .contenido-seminario2 .seminario-imagenes .seminario:hover {
   transform: scale(1.1);
   transform-origin: center center;
 }
-.contenido-seminario .img-seminario {
+.contenido-seminario .img-seminario, .contenido-seminario2 .img-seminario {
   display: flex;
   justify-content: space-between;
   padding: 10px 0 0 30px;
@@ -829,24 +840,24 @@ html {
   width: 850px;
   height: 500px;
 }
-.contenido-seminario .info-costo {
+.contenido-seminario .info-costo, .contenido-seminario2 .info-costo {
   font-size: 20px;
   font-family: "Manrope", sans-serif;
   padding: 15px;
 }
-.contenido-seminario .descrip-seminario {
+.contenido-seminario .descrip-seminario, .contenido-seminario2 .descrip-seminario {
   font-size: 20px;
   font-family: "Manrope", sans-serif;
   padding: 15px;
   margin-right: 20px;
 }
-.contenido-seminario .space-button {
+.contenido-seminario .space-button, .contenido-seminario2 .space-button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 30px;
 }
-.contenido-seminario .button-seminario {
+.contenido-seminario .button-seminario, .contenido-seminario2 .button-seminario {
   background-color: rgb(0, 0, 0);
   border-color: #d9157a;
   color: rgb(253, 248, 248);
@@ -858,7 +869,7 @@ html {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.contenido-seminario .button-seminario:hover {
+.contenido-seminario .button-seminario:hover, .contenido-seminario2 .button-seminario:hover {
   transform: scale(1.1);
   transform-origin: center center;
 }
@@ -914,23 +925,41 @@ html {
   .navegacion {
     font-size: 18px;
   }
-  .container, .banner-carrera, .info-div, .container-carrera {
+  .container,
+.banner-carrera,
+.info-div,
+.container-carrera {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     padding: auto;
   }
-  .container-2, .bg-career {
+  .container-2,
+.bg-career {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 1000px;
   }
+  .div-container p {
+    font-size: 1.8rem;
+  }
+  .contenido-seminario2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .info-carrera {
+    width: 1400px;
+  }
   .img-carrera {
     margin: 5px;
     width: 700px;
     height: 400px;
+  }
+  .grid-flex {
+    display: grid;
+    justify-content: center;
   }
   .img-iconos {
     width: 400px;
@@ -964,7 +993,7 @@ html {
 }
 @media (max-width: 1280px) {
   .df-header {
-    height: 200px;
+    height: 120px;
   }
   .df-ul {
     display: flex;
@@ -974,14 +1003,8 @@ html {
   .navegacion {
     font-size: 18px;
   }
-  .container, .banner-carrera {
-    justify-content: center;
-    align-items: center;
-  }
-  .container-2, .bg-career {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .container-2,
+.bg-career {
     height: 1200px;
   }
   .info-div {
@@ -989,16 +1012,36 @@ html {
     justify-content: center;
     align-items: center;
   }
+  .info-carrera,
+.div-img {
+    width: 950px;
+  }
+  .container-carrera {
+    width: 950px;
+  }
+  .dos-columnas {
+    gap: 20px;
+  }
+  .info {
+    width: 900px;
+  }
   .img-carrera {
-    margin: 5px;
     width: 700px;
     height: 400px;
   }
-  .dos-columnas {
-    column-gap: 50px;
+  .tamaño {
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    height: 600px;
   }
-  .text-form {
-    width: 400px;
+  .parrafo {
+    font-size: 18px;
+  }
+  .contenido-seminario2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .seminarios {
     flex-direction: column;
@@ -1006,8 +1049,9 @@ html {
     align-items: center;
   }
   .fuente-seminarios {
-    margin: 15px;
+    margin: 30px;
     font-size: 40px;
+    width: 250px;
   }
   .iconos {
     flex-wrap: wrap;
@@ -1029,105 +1073,50 @@ html {
   }
 }
 @media (max-width: 900px) {
-  .df-header {
-    width: 650px;
-    height: 150px;
+  .logo {
+    width: 300px;
   }
-  .df-ul {
-    flex-wrap: wrap;
-  }
-  .fuente-titulo {
-    width: 610px;
+  .info-div {
+    width: 800px;
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
   }
-  .container {
-    width: 620px;
-  }
-  .container .div-container {
-    font-size: 20px;
-  }
-  .container p, .container .info-div {
-    width: 600px;
+  .div-container {
+    width: 500px;
   }
   .container-2 {
-    width: 700px;
-    height: 900px;
+    height: 800px;
   }
-  .container-2 h2 {
-    font-size: 35px;
-    width: 650px;
-  }
-  .container-2 p {
-    width: 550px;
-    margin-right: 70px;
-    font-size: 18px;
-  }
-  .container-2 .place {
-    margin-right: 50px;
-  }
-  .container-2 .div-img {
-    width: 550px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  .container-2 .div-img .container-img {
-    margin-right: 80px;
-  }
-  .iconos {
-    width: 550px;
-  }
-  .container-iconos {
-    width: 600px;
-  }
-  .bg-footer {
-    width: 600px;
-  }
-  .bg-footer p, .bg-footer h3 {
-    text-align: center;
-  }
-  .titulo-carrera {
-    font-size: 40px;
-  }
-  .button-carrera {
+  .info,
+.div-img {
     font-size: 20px;
-    width: 170px;
-    height: 35px;
-    font-weight: 700;
+    width: 880px;
   }
-  .titulo-form {
-    font-size: 30px;
+  .info p,
+.div-img p {
+    font-size: 18px;
+    width: 550px;
   }
-  .button-carrera {
-    width: 250px;
-    height: 70px;
-  }
-  .dos-columnas {
+  .info-div {
     font-size: 18px;
   }
-  .info-carrera h2 {
-    font-size: 2.5rem;
-    padding: 10px;
-  }
-  .info-carrera {
-    font-size: 15px;
+  .info-div h2 {
+    font-size: 35px;
   }
   .img-carrera {
-    width: 550px;
-    height: 400px;
-    padding: 15px;
+    width: 600px;
+    height: 300px;
   }
-  .boton-carrera {
-    font-size: 20px;
-    width: 170px;
-    height: 35px;
-    font-weight: 700;
+  .fuente-seminarios {
+    text-align: center;
   }
-  .info {
+  .seminarios,
+.fuente-seminarios {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    margin-left: 70px;
   }
   .iconos {
     display: flex;
@@ -1158,56 +1147,136 @@ html {
   .logo {
     width: 200px;
   }
-  .contenido-seminario {
-    display: flex;
-    flex-direction: column;
+  .parrafo {
+    margin: 0;
+    padding: 10px;
   }
   .tres--columnas {
     display: flex;
     flex-direction: column;
+    height: 550px;
   }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 650px;
-  }
-  .info {
-    font-size: 15px;
-    padding: 15px;
-    text-align: center;
-  }
-  .info-div {
-    font-size: 18px;
-    padding: 20px;
-  }
-  .redes-container, .form-items, .contenido-seminario .seminario-imagenes .seminario, .bg-footer h3 {
-    font-size: 15px;
-    text-align: center;
-  }
-  .container-2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 1000px;
-  }
-  .info-div {
+  .banner-carrera {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .img-carrera {
-    margin: 5px;
-    width: 700px;
-    height: 400px;
+  .info-carrera {
+    width: 900px;
+    font-size: 15px;
+  }
+  .info-carrera h2 {
+    font-size: 35px;
+  }
+  .bg-career {
+    height: 800px;
+  }
+  .container-carrera {
+    width: 400px;
+  }
+  .inscripcion {
+    width: 800px;
+  }
+  .text-form {
+    width: 350px;
+  }
+  .espacio-titulo {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenido-seminario {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .df-header {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+  }
+  .df-header .df-ul {
+    margin-bottom: 20px;
+  }
+  .df-header .logo {
+    width: 290px;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+  }
+  .info {
+    font-size: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  .info-div h2 {
+    font-size: 25px;
+  }
+  .div-img {
+    width: 470px;
+  }
+  .parrafo {
+    font-size: 15px;
+  }
+  .grid-flex {
+    width: 650px;
+  }
+  .grid-flex .grid-rows {
+    width: 600px;
+  }
+  .bg-classes h1,
+.bg-classes h2 {
+    width: 650px;
+  }
+  .advertencia {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .div-parrafo {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    width: 500px;
+  }
+  .seminario .imagen {
+    width: 520px;
+    background-size: cover;
+    margin: 15px;
+  }
+  .container-carrera {
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-color {
+    background-color: #315566;
+  }
+  .redes-container, .form-items, .contenido-seminario .seminario-imagenes .seminario, .contenido-seminario2 .seminario-imagenes .seminario,
+.bg-footer h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+  .dos-columnas {
+    gap: 5px;
+  }
+  .inscripcion {
+    width: 600px;
+  }
+  .text-form {
+    width: 280px;
+    height: 50px;
   }
   .titulo-carrera {
-    margin-left: 120px;
-    font-size: 5px;
-    width: 650px;
+    font-size: 35px;
+    width: 880px;
   }
   .button-carrera {
     font-size: 20px;
-    width: 150px;
+    width: 210px;
     height: 70px;
   }
   .img-carrera {
@@ -1215,92 +1284,198 @@ html {
     height: 350px;
   }
   .titulo-form {
-    font-size: 18px;
+    font-size: 25px;
   }
-  .dos-columnas {
-    display: flex;
-    justify-content: space-around;
+  .titulo-form .container-img {
+    width: 600px;
   }
-  .tres--columnas {
-    display: flex;
-    flex-direction: column;
+  .min-height-qs {
+    min-height: 50vh;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) and (max-width: 480px) {
   .df-header {
-    height: 450px;
+    height: 520px;
     flex-direction: column;
     justify-content: center;
   }
+  .df-ul {
+    flex-direction: column;
+  }
   .logo {
-    width: 300px;
+    width: 110px;
     padding: 10px;
     margin: 10px;
   }
   .container h1 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
+    width: 300px;
   }
   .div-container {
-    color: antiquewhite;
-    font-size: 25px;
-    width: 400px;
-    padding: 5px;
-    margin-right: 60px;
+    color: rgb(253, 248, 248);
+    display: flex;
+    flex-direction: column;
   }
-  .info-div {
+  .div-container p {
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+  }
+  .container-2 {
+    height: 900px;
+    width: 480px;
+  }
+  .container-2 .info {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+  }
+  .container-2 .info p,
+.container-2 .info .place,
+.container-2 .info .bot {
+    width: 300px;
+  }
+  .container-2 .info-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 150px;
     font-size: 10px;
+  }
+  .container-2 .info-div h2 {
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+  }
+  .container-2 .info-div .place {
+    text-align: center;
+    font-size: 25px;
+    width: 300px;
+    margin-left: 35px;
+  }
+  .container-2 .div-img {
+    width: 550px;
+    padding: 20px;
+    margin: 15px;
+  }
+  .days {
+    width: 150px;
+  }
+  .days .titulo {
+    text-align: start;
+    margin-left: 75px;
+  }
+  .days .titulo-principal {
+    width: 390px;
+  }
+  .days .excepcion {
+    margin-left: 35px;
+  }
+  .grid-flex {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 55px;
+    align-items: center;
+  }
+  .grid-flex .grid-classes,
+.grid-flex .grid-classes2,
+.grid-flex .grid-classes3 {
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .grid-flex .grid-rows {
+    width: 200px;
+  }
+  .advertencia {
+    width: 200px;
+    height: 150px;
+    font-size: 15px;
+    margin-right: 85px;
+  }
+  .advertencia .hour-center {
+    display: flex;
+    justify-content: flex-start;
   }
   .button {
     width: 250px;
   }
-  .container-2 {
-    height: 1300px;
+  .banner-carrera {
     width: 500px;
   }
+  .banner-carrera .space {
+    width: 350px;
+  }
+  .banner-carrera .space .titulo-carrera {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    width: 300px;
+  }
+  .banner-carrera .space .button-carrera {
+    width: 200px;
+  }
+  .bg-career {
+    height: 900px;
+  }
   .info-carrera {
+    width: 350px;
+    height: 200px;
     font-size: 10px;
   }
-  .container-img {
+  .info-carrera h2 {
     width: 400px;
+    height: 300px;
+  }
+  .container-img {
+    width: 250px;
+  }
+  .heading {
+    width: 300px;
   }
   .img--destacada {
-    width: 480px;
+    width: 500px;
+    height: 500px;
+  }
+  .parrafo {
+    width: 300px;
+    font-size: 15px;
+  }
+  .min-height-qs {
+    min-height: 210vh;
   }
   .tres--columnas {
     display: flex;
     flex-direction: column;
   }
   .seminarios {
-    font-size: 15px;
-  }
-  .fuente-seminarios {
-    margin: 15px;
-    text-align: center;
-    font-size: 30px;
-  }
-  .img-iconos {
-    width: 400px;
-    height: 400px;
-    margin: 20px;
-    padding: 10px;
+    font-size: 1.5rem;
+    width: 450px;
   }
   .icono-center svg {
-    width: 80px;
+    width: 100px;
   }
   .sugerencias {
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
+    width: 250px;
   }
-  .bg-footer {
-    font-size: 13px;
+  .heading {
+    font-size: 50px;
+    width: 350px;
+    text-align: center;
+  }
+  .tres--columnas {
+    height: 800px;
+    width: 450px;
   }
   .space {
     width: 500px;
-  }
-  .titulo-carrera {
-    font-size: px;
   }
   .button-carrera {
     font-size: 18px;
@@ -1311,39 +1486,27 @@ html {
     width: 400px;
     height: 500px;
   }
-  .info-carrera {
-    font-size: 5px;
-    margin-right: 200px;
-    font-size: 13px;
-    width: 400px;
-    height: 700px;
-  }
-  .img-carrera {
-    width: 300px;
-    height: 200px;
-    margin-top: 185px;
-    margin-right: 170px;
-  }
   .titulo-form {
     font-size: 25px;
   }
-  .text-form {
-    width: 250px;
-    height: 30px;
+  .column {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .inscripcion, .row {
+  .column .row {
     display: flex;
     flex-direction: column;
-    margin: 0%;
   }
   .titulo-seminario {
     font-size: 20px;
+    width: 380px;
   }
-  .costo, .span {
+  .costo,
+.span {
     font-size: 15px;
-  }
-  .parrafo {
-    font-size: 15px;
+    width: 350px;
   }
   .seminario {
     width: 380px;
@@ -1351,9 +1514,47 @@ html {
     margin: 0;
     padding: 0;
   }
+  .seminario .img {
+    width: 420px;
+    height: 450px;
+    padding: 30px;
+    margin-right: 80px;
+  }
   .h2-seminario {
-    font-size: 25px;
+    width: 200px;
+    text-decoration: none;
     text-align: center;
+  }
+  .contenido-seminario {
+    width: 400px;
+  }
+  .img-seminario {
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+  }
+  .qs {
+    font-size: 35px;
+    width: 350px;
+  }
+  .contenedor-preguntas {
+    width: 380px;
+    margin-top: 25px;
+  }
+  .min-height {
+    min-width: none;
+  }
+  .div-form {
+    width: 350px;
+  }
+  .div-form .formulario {
+    height: 600px;
+  }
+  .bg-footer .logo {
+    display: grid;
+    visibility: hidden;
+    width: 2px;
+    height: 1px;
   }
 }
 

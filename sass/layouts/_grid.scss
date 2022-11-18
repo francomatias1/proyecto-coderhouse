@@ -16,9 +16,9 @@
     background-size: cover;
 
 }
-.grid {
-    display: grid;
-    justify-content: center;
+.grid-flex {
+    display: flex;
+    justify-content: flex-start;
     
     .grid-rows {
         display: grid;

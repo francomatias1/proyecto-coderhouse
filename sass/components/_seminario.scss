@@ -1,5 +1,8 @@
 /** Seminarios **/
-
+.background {
+    background-image: linear-gradient(to top, #313f66 0%, rgb(255, 255, 255) 100%);
+   
+}
 .titulo-seminario {
     text-transform: uppercase;
     text-align: left;
@@ -52,7 +55,7 @@
     font-size: 20px;
     margin-bottom: 5px;
 }
-.contenido-seminario {
+.contenido-seminario, .contenido-seminario2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -64,12 +67,15 @@
         margin: 5px;
 
         .h2-seminario {
-            font-family: $fuentePrimaria;
-            font-size: 30px;
+            font-family: $fuenteSecundaria;
+            font-size: 27px;
             font-weight: 700;
             letter-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: overline;
             margin: 20px;
-            padding: 15px
+            padding: 15px;
+            
     }
 
         .seminario {
